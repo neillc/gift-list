@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/foundation/6.1.1/foundation.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.1/foundation.min.css">
+    {% if title %}
+    <title>{{ title }} - GiftList</title>
+    {% else %}
+    <title>Welcome to GiftList</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>GiftList: <a href="/">Home</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>
